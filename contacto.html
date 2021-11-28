@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Contacto</title>
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.png" alt="logo" />
+      <h1>Déjà Food</h1>
+      <div class="btn_menu"><a>☰</a></div>
+      <nav>
+        <ul class="navegacion">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contenedor">
+      <hgroup class="datos">
+        <h3>Datos de Contacto</h3>
+        <p>Dirección: Av. San Martín 1545, Tandil</p>
+        <p>Teléfono: 2494-565656 / 2494-363636</p>
+        <p>Email: Dejafoodcontacto@gmail.com</p>
+        <h4>Horario de Atención</h4>
+        <p>Lunes a Viernes 12–15hs, 20–23hs</p>
+      </hgroup>
+      <div class="contacto">
+        <form action="">
+          <h3>Reservá y vení a conocernos</h3>
+          <label for="name">Nombre:</label>
+          <input type="text" name="nombre" />
+          <label for="dia">Día:</label>
+          <input type="date" name="dia" />
+          <label for="horario">Horario:</label>
+          <input type="time" name="horario" />
+          <label for="telefono">Teléfono:</label>
+          <input type="number" name="telefono" />
+          <label for="email">E-mail:</label>
+          <input type="text" name="email" />
+          <textarea
+            name="Comentario"
+            rows="8"
+            cols="40"
+            placeholder="Dejanos tu comentario..."
+          ></textarea>
+          <h3 id="captchaGenerado"></h3>
+          <input id="captchaInput" type="number" />
+          <input id="enviar" class="boton" type="button" value="ENVIAR" />
+          <h3 id="resultado"></h3>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <a href="https://www.whatsapp.com">
+        <img class="redes" src="images/logo_whatsapp.png" alt="whatsapp" />
+      </a>
+      <a href="https://www.facebook.com">
+        <img class="redes" src="images/logo_facebook.png" alt="facebook" />
+      </a>
+      <a href="https://www.instagram.com">
+        <img class="redes" src="images/logo_instagram.png" alt="instagram" />
+      </a>
+    </footer>
+    <script text="text/javascript" src="js/main.js"></script>
+    <script text="text/javascript" src="js/captcha.js"></script>
+  </body>
+</html>

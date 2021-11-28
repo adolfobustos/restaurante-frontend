@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="images/logo.png" alt="logo" />
+      <h1>Déjà Food</h1>
+      <div class="btn_menu"><a>☰</a></div>
+      <nav>
+        <ul class="navegacion">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contenedor">
+      <section>
+        <div class="menu">
+          <h2>Nuestro Menu</h2>
+          <h4>Entrada</h4>
+          <ul>
+            <li>Ensalada Mixta</li>
+            <li>Ensalada Cesar</li>
+            <li>Tabla de Verduras</li>
+            <li>Lengua a la vinagreta</li>
+          </ul>
+          <h4>Pastas</h4>
+          <ul>
+            <li>con salsa a elección:</li>
+            <li>Ñoquis</li>
+            <li>Tallarines</li>
+            <li>Sorrentinos</li>
+          </ul>
+          <h4>Carnes</h4>
+          <ul>
+            <li>Chuletas de Cerdo</li>
+            <li>Carne en Salsa</li>
+            <li>Pechuga de pollo rellena</li>
+          </ul>
+          <h4>Acompañamientos</h4>
+          <ul>
+            <li>Papas Fritas</li>
+            <li>Tortilla</li>
+            <li>Papas Noissette</li>
+            <li>Ensalada Rusa</li>
+          </ul>
+          <h4>Bebidas</h4>
+          <ul>
+            <li>Agua s/c gas</li>
+            <li>Gaseosa/Cerveza</li>
+            <li>Vino Tinto</li>
+          </ul>
+          <h4>Postres</h4>
+          <ul>
+            <li>Tarta de Limón</li>
+            <li>Tiramisu</li>
+            <li>Flan</li>
+          </ul>
+        </div>
+        <figure>
+          <img class="imagen" src="images/menu.jpg" alt="menu" />
+        </figure>
+      </section>
+      <div class="menu-semanal">
+        <h3>Viandas</h3>
+        <p>
+          Ponemos a tu disposición nuestro nuevo formato de viandas semanales.
+          Donde te ofrecemos una gran variedad de platos para ser consumidos en
+          la comodidad de tu hogar o en el lugar que tú elijas, economizando tu
+          tiempo y sin alterar tu rutina diaria. A continuación podras encontrar
+          nuestro menu de la semana el cual consta de diferentes platos para
+          cada necesidad.
+        </p>
+      </div>
+      <div class="contenedor_tabla">
+        <table id="tabla">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Menú Saludable</th>
+              <th>Menú s/tacc</th>
+              <th>Menú Buffet</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>Pastel de calabaza y cerdo</td>
+              <td>Pechuga de pollo rellena y verduras</td>
+              <td>Filet de pescado con pure</td>
+            </tr>
+            <tr>
+              <td>Martes</td>
+              <td>Mero al horno con papas</td>
+              <td>Fideos de arroz y cerdo salteado</td>
+              <td>Ensalada c/pechuga, lechuga, tomate</td>
+            </tr>
+            <tr>
+              <td>Miercoles</td>
+              <td>Albóndigas de carne vegetal</td>
+              <td>Cazuela de lentejas</td>
+              <td>Canoas de berenjenas al horno</td>
+            </tr>
+            <tr>
+              <td>Jueves</td>
+              <td>Burger casera y papas fritas</td>
+              <td>Chuletas de cerdo y papas fritas</td>
+              <td>Arrollado de carne y ensalada rusa</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>Pollo al horno y arroz primavera</td>
+              <td>Ensalada mixta, pescado al horno</td>
+              <td>Risotto (Arroz integral con crema)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="contenedor_carrito">
+        <div class="carrito">
+          <h3>Arma tu menú del día:</h3>
+          <label for="dia">Seleccionar dia de la semana:</label>
+          <select id="select_dia">
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miercoles">Miercoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+          </select>
+          <label for="entrada">Selecciona una entrada:</label>
+          <select id="select_entrada">
+            <option value="Ensalada Mixta">Ensalada Mixta</option>
+            <option value="Tortilla">Tortilla</option>
+            <option value="Papas Bravas">Papas Bravas</option>
+          </select>
+          <label for="plato_principal">Selecciona el Plato Principal:</label>
+          <select id="select_plato">
+            <option value="Milanesa con Pure">Milanesa con Pure</option>
+            <option value="Chuleton de cerdo con tortilla">
+              Chuleton de cerdo con tortilla
+            </option>
+            <option value="Guiso de Lentejas">Guiso de Lentejas</option>
+            <option value="Rissoto de Hongos">Rissoto de Hongos</option>
+            <option value="Carne asada con batatas">
+              Carne asada con batatas
+            </option>
+          </select>
+          <label for="postre">Selecciona el Postre:</label>
+          <select id="select_postre">
+            <option value="Tarta Limón">Tarta Limón</option>
+            <option value="Tiramisu">Tiramisu</option>
+            <option value="Flan">Flan</option>
+            <option value="Ensalada Fruta">Ensalada Fruta</option>
+          </select>
+          <button id="btn-agregar" class="boton">Agregar</button>
+          <button id="btn-agregarx3" class="boton">Agregar x3</button>
+          <button id="btn-reset" class="boton">Borrar todos</button>
+          <h3>Filtrar por dia</h3>
+          <select id="select_filtro_dia">
+            <option value="Todos">Todos</option>
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miercoles">Miercoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+          </select>
+          <table id="tabla_semanal">
+            <thead>
+              <tr>
+                <th>Día</th>
+                <th>Entrada</th>
+                <th>Plato Principal</th>
+                <th>Postre</th>
+              </tr>
+            </thead>
+            <tbody id="tabla_semanal_body"></tbody>
+          </table>
+        </div>
+      </div>
+      <figure class="platos">
+        <img
+          class="fotos_platos"
+          src="images/cheese&tomato.jpg"
+          alt="queso y tomate"
+        />
+        <img class="fotos_platos" src="images/meat.jpg" alt="carne" />
+        <img class="fotos_platos" src="images/cup.jpg" alt="taza" />
+        <img class="fotos_platos" src="images/dessert.jpg" alt="postre" />
+      </figure>
+    </div>
+    <footer>
+      <a href="https://www.whatsapp.com">
+        <img class="redes" src="images/logo_whatsapp.png" alt="whatsapp" />
+      </a>
+      <a href="https://www.facebook.com">
+        <img class="redes" src="images/logo_facebook.png" alt="facebook" />
+      </a>
+      <a href="https://www.instagram.com">
+        <img class="redes" src="images/logo_instagram.png" alt="instagram" />
+      </a>
+    </footer>
+    <script text="text/javascript" src="js/main.js"></script>
+    <script text="text/javascript" src="js/tabla.js"></script>
+  </body>
+</html>

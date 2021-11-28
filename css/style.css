@@ -1,0 +1,279 @@
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-shadow: 1px 2px #999999;
+  letter-spacing: 4px;
+  padding: 20px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+body {
+  background-color: #c31432;
+  background-image: url(../images/cd-mobile.png);
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  float: left;
+  margin: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #240b36;
+}
+
+.btn_menu {
+  background: #250b37;
+  padding: 10px 40px;
+  clear: both;
+}
+
+.btn_menu a {
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  background: #250b37;
+  color: white;
+  display: flex;
+  width: 100%;
+}
+
+ul.navegacion {
+  width: 100%;
+  display: none;
+  flex-direction: column;
+}
+
+ul.navegacion.show {
+  display: flex;
+}
+
+ul.navegacion li {
+  list-style: none;
+  font-weight: bold;
+  padding: 15px 20px;
+  margin-left: 20px;
+}
+
+ul.navegacion li a {
+  text-decoration: none;
+}
+
+.nosotros {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.imagen {
+  width: 90%;
+  height: auto;
+  border: 5px solid #ada996;
+  border-radius: 20px;
+}
+
+.contenedor {
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+.contenedor .menu {
+  padding: 20px;
+  margin-right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 3px solid #ada996;
+  margin-bottom: 20px;
+  min-width: 200px;
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu-semanal {
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.contenedor_tabla {
+  color: black;
+
+  margin-bottom: 40px;
+}
+
+#tabla {
+  background-color: white;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 15px;
+  width: 100%;
+}
+
+thead {
+  background-color: #240b36;
+  border-bottom: solid 5px #c31432;
+  color: white;
+}
+
+td,
+th {
+  font-weight: normal;
+  padding: 5px;
+  border: #240b36 1px solid;
+}
+
+.contenedor_carrito {
+  display: flex;
+  justify-content: center;
+}
+
+.carrito {
+  width: 100%;
+  max-width: 450px;
+  background: rgb(37, 11, 55, 0.8);
+  padding: 15px;
+  margin-bottom: 40px;
+}
+
+select {
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  padding: 4px;
+  margin-bottom: 15px;
+}
+
+#tabla_semanal {
+  width: 100%;
+  color: black;
+  background-color: white;
+  border-collapse: collapse;
+  margin-top: 10%;
+}
+
+.platos {
+  display: block;
+  text-align: center;
+}
+
+.fotos_platos {
+  max-width: 250px;
+  background-color: white;
+  padding: 10px;
+  padding-bottom: 20px;
+  border: 1px solid #bfbfbf;
+  box-shadow: 10px 10px 30px black;
+  margin: 10px;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+}
+
+.datos {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+form {
+  width: 100%;
+  max-width: 450px;
+  background-color: rgba(37, 11, 55, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+form p {
+  padding: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 4px;
+  font-size: 15px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.boton {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+footer {
+  background: #240b36;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+.redes {
+  width: 50px;
+  height: 50px;
+  padding-inline-end: 10px;
+}
+
+@media (min-width: 800px) {
+  body {
+    background-image: url(../images/cutlery-drawing.png);
+  }
+  .btn_menu {
+    display: none;
+  }
+  ul.navegacion {
+    display: flex;
+    flex-direction: row;
+  }
+  ul.navegacion li:hover {
+    background-color: #c31432;
+  }
+  section {
+    display: flex;
+  }
+  .contenedor_tabla {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #tabla {
+    width: 75%;
+  }
+}
